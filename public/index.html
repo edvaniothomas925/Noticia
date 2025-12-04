@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+    <script src="client.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ZonaNotícia — Notícias recentes, resumos e análises</title>
+    <meta name="description" content="Portal de notícias com atualizações automáticas. Conteúdo original, otimizado para SEO e pronto para AdSense.">
+    <meta name="author" content="Seu Nome ou Marca">
+
+
+    <!-- SEO básico + Open Graph -->
+    <meta property="og:title" content="ZonaNotícia — Notícias recentes" />
+    <meta property="og:description" content="Portal de notícias com resumos originais e atualizações automáticas." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/cover.png" />
+
+
+    <!-- JSON-LD (Organization + WebSite) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsMediaOrganization",
+            "name": "ZonaNotícia",
+            "url": "https://seusite.example",
+            "logo": "https://seusite.example/assets/logo.png",
+            "sameAs": []
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">ZonaNotícia</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <main class="grid">
+        <section>
+            <div class="card">
+                <h1>Últimas notícias</h1>
+                <p class="meta">Atualizado automaticamente pelo bot — fontes públicas e resumos originais.</p>
+            </div>
+
+            <div id="articles" class="articles-list" style="margin-top:12px"></div>
+
+        </section>
+
+        <aside class="sidebar">
+            <div class="card">
+                <h3>Busca</h3>
+                <input id="search" placeholder="Procurar notícias" style="width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid #e2e8f0">
+            </div>
+
+            <div class="card" style="margin-top:12px">
+                <h3>Anúncio</h3>
+                <div class="ad">Bloco de anúncio (AdSense)</div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+                <h3>Categorias</h3>
+                <ul style="margin-top:8px;list-style:none;padding-left:0;color:#334155">
+                    <li>Política</li>
+                    <li>Tecnologia</li>
+                    <li>Esportes</li>
+                    <li>Cultura</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        © <span id="year"></span> ZonaNotícia — Feito com ❤️
+    </footer>
+</div>
+</body>
+</html>
